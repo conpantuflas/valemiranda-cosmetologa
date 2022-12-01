@@ -1,19 +1,14 @@
 import React from 'react';
 import ImageTreatments from '../styles components/treatments/ImageTreatments';
+import TreatmentSlider from './TreatmentSlider';
 const Treatments = () => {
     return (
         <ImageTreatments>
-            <h1>Treatments</h1>;
+            <h1>Treatments</h1>
+            <TreatmentSlider/>
         </ImageTreatments>
     );
 }
 
-// const ImageTreatments = styled.div`
-//   background-image: url(${gg});
-//   background-size: cover;
-//   width: 100%;
-//   height: 70vh;
-//   object-fit: cover;
-// `;
 
 export default Treatments;

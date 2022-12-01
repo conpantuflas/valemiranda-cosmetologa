@@ -61,15 +61,15 @@ const PrincipalSlider = () => {
     <Content>
         <ContentrSlideShow ref={slideshow}>
           <Slide>
-            <img src={img1} alt="" />
+            <img src={img1} alt="img" />
           </Slide>
 
           <Slide>
-            <img src={img2} alt="" />
+            <img src={img2} alt="img" />
           </Slide>
 
           <Slide>
-            <img src={img3} alt="" />
+            <img src={img3} alt="img" />
           </Slide>
         </ContentrSlideShow>
 
