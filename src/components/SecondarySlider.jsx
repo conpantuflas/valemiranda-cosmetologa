@@ -4,15 +4,16 @@ import ControlsSlide from "./ControlsSlide"
 import styled from "styled-components";
 import Card from "./card";
 import Slide from "../styles components/slider/Slide";
+import ContentSlideSecondary from "../styles components/secondarySlider/ContentSlideSecondary";
 
-const TreatmentsSlider = () => {
+const SecondarySlider = () => {
   const slideshow = useRef(null);
 
   return (
     <>
-      <ContentSlideTreatment>
+      <ContentSlideSecondary>
         {/* slideshow */}
-        <ContentSlideShowTreatments ref={slideshow}>
+        <ContentSlideShowSecondary ref={slideshow}>
           <Slide overflow="none" minwidth="12rem">
             <Card />
           </Slide>
@@ -31,35 +32,29 @@ const TreatmentsSlider = () => {
           <Slide overflow="none" minwidth="12rem">
             <Card />
           </Slide>
-        </ContentSlideShowTreatments>
+        </ContentSlideShowSecondary>
 
         <ControlsSlide top="50%" slideshow={slideshow}/>
-      </ContentSlideTreatment>
+      </ContentSlideSecondary>
     </>
   );
 };
 
 
 
-const ContentSlideTreatment = styled.div`
-  position: relative;
-  justify-content: center;
-  display: flex;
-  width: 100%;
-  overflow-x: hidden;
-  overflow-y: visible;
-  `;
 
-const ContentSlideShowTreatments = styled.div`
+
+const ContentSlideShowSecondary = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: nowrap;
-  height: 50vh;
-  width: 70%;
+  height: 55vh;
+  width: 85%;
   overflow: hidden;
   margin: 0;
 `;
 
 
 
-export default TreatmentsSlider;
+export default SecondarySlider;

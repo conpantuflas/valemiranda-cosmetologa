@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import img from "../../media/flower-blue.jpg";
 
-const ImageTreatments = styled.div`
-  background-image: url(${img});
+const ImageSecondarySlide = styled.div`
+  background-image: url(${(props) => props.bgImg});
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -10,4 +9,4 @@ const ImageTreatments = styled.div`
   margin-top: -1.5rem;
 `;
 
-export default ImageTreatments;
+export default ImageSecondarySlide;

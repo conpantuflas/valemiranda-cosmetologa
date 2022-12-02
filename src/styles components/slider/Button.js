@@ -21,7 +21,7 @@ const Button = styled.button`
         ? "drop-shadow(2px 0px 0px #fff)"
         : "drop-shadow(-2px 0px 0px #fff)"};
   }
-  ${(props) => (props.izquierdo ? "right:550px" : "left:550px")}
+  ${(props) => (props.izquierdo ? "right:570px" : "left:570px")}
 `;
 
 export default Button;

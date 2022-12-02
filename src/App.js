@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Slider from "./components/PrincipalSlider";
+import Tips from "./components/Tips";
 import Treatments from "./components/Treatments";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Slider />
       <Treatments />
+      <Tips />
     </div>
   );
 }
