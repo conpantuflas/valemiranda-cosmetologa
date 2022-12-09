@@ -1,7 +1,6 @@
 import "./App.css";
 import Home from "./views/Home";
 import Profile from "./components/Profile";
-import Prueba from "./components/Prueba";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
