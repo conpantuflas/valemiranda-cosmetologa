@@ -1,21 +1,17 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import Slider from "./components/PrincipalSlider";
-import Red from "./components/Red";
-import Tips from "./components/Tips";
-import Treatments from "./components/Treatments";
+import Home from "./views/Home";
+import Profile from "./components/Profile";
+import Prueba from "./components/Prueba";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Slider />
-      <Treatments />
-      <Tips />
-      <Red />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Profile" element={<Profile />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,8 +1,13 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import img from '../media/mapa.png'
-import styled from 'styled-components';
 
-const Footer = () => {
+
+import AFooter from '../styles components/footer/AFooter';
+import Map from '../styles components/footer/Map';
+import Text from '../styles components/footer/Text';
+
+const Footer = () =>
+{
 
     const [inHover, setInHover] = useState(false);
 
@@ -13,50 +18,19 @@ const Footer = () => {
                     onMouseEnter={() => setInHover(true)}
                     onMouseLeave={() => setInHover(false)}
                 >
-                <img src={img} alt='mapa'
-                />
-                 {inHover != false ? (
-                <Text>Click me!</Text>
-              ) : (
-                ""
-              )}
+                    <img src={img} alt='mapa'
+                    />
+                    {inHover != false ? (
+                        <Text>Click me!</Text>
+                    ) : (
+                        ""
+                    )}
                 </a>
             </Map>
         </AFooter>
     );
 }
 
-const AFooter = styled.div`
-    background-color: #cab1b5;
-    width: 100%;
-    height: 55vh;
-    `
 
-const Map = styled.div`
-    padding: 3rem;
-    & img{
-        border-radius: 15px;
-        width: 50%;
-        height: 40vh;
-        object-fit: cover;
-        object-position: center;
-        &:hover{
-            transition: 1000ms ease-out all;
-            filter: brightness(50%);
-            cursor: pointer;
-        }
-    }
-    & a{
-        text-decoration: none;
-    }
-    `
-
-const Text = styled.p`
-    color:#fff;
-    font-weight: 800;
-    text-align: center;
-    margin-top: -5rem;
-    position: relative;
-`
 
 export default Footer;

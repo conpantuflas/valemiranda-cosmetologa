@@ -4,11 +4,13 @@ import Name from '../styles components/navbar/Name'
 import Profession from '../styles components/navbar/Profession'
 import ElementsNavbar from '../styles components/navbar/ElementsNavbar'
 import Logo from '../styles components/navbar/Logo'
+import ContentSvg from '../styles components/navbar/ContentSvg';
 import { ReactComponent as Ubication } from "../media/ubication.svg"
 import { ReactComponent as User } from "../media/user.svg"
+import { Link } from "react-router-dom";
 
-
-const Navbar = () => {
+const Navbar = () =>
+{
 
 
     return (
@@ -21,7 +23,8 @@ const Navbar = () => {
             <ElementsNavbar>
                 <p>Inicio</p>
                 <p>|</p>
-                <p onClick={()=>{
+                <p onClick={() =>
+                {
                     window.scrollBy({
                         top: 500,
                         left: 0,
@@ -30,20 +33,26 @@ const Navbar = () => {
                 }}
                 >Tratamientos</p>
                 <p>|</p>
-                <p onClick={()=>window.scrollBy({
-                      top: 920,
-                      left: 0,
-                      behavior: 'smooth'
+                <p onClick={() => window.scrollBy({
+                    top: 920,
+                    left: 0,
+                    behavior: 'smooth'
                 })}
                 >Tips</p>
                 <p>|</p>
-                <Ubication onClick={()=>window.scrollBy({
-                    top: 1200,
-                    left: 0,
-                    behavior: 'smooth'
-                    }) }/>
+                <ContentSvg>
+                    <Ubication onClick={() => window.scrollBy({
+                        top: 1200,
+                        left: 0,
+                        behavior: 'smooth'
+                    })} />
+                </ContentSvg>
                 <p>|</p>
-                <User/>
+                <Link to='/profile'>
+                    <ContentSvg>
+                        <User />
+                    </ContentSvg>
+                </Link>
             </ElementsNavbar>
         </ContentNavbar>
     );

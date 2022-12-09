@@ -11,7 +11,6 @@ const ElementsNavbar = styled.div`
   margin: 0 auto;
   padding-bottom: 1rem;
   color: #ac415a;
-  fill: #ac415a;
   font-size: 1.5rem;
   padding: 1.5rem;
   position: absolute;
