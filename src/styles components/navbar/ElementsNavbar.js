@@ -6,16 +6,17 @@ const ElementsNavbar = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 70%;
+  width: 100%;
   height: 1.5rem;
   margin: 0 auto;
   padding-bottom: 1rem;
   color: #ac415a;
   font-size: 1.5rem;
   padding: 1.5rem;
-  position: absolute;
-  top: 4rem;
-  left: 20%;
+  position: relative;
+  z-index: 1000;
+  top: 0;
+  left: 0%;
   font-family: fantasy;
   &:hover {
     cursor: pointer;

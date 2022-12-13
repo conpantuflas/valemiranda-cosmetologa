@@ -1,12 +1,16 @@
 import React from 'react';
 import ACard from '../styles components/card/ACard.js';
 import NameCard from '../styles components/secondarySlider/NameCard.js';
+import { Link } from 'react-router-dom';
 
-const Card = () => {
+const Card = () =>
+{
     return (
-        <ACard>
-            <NameCard>Limpieza Facial</NameCard>
-        </ACard>
+        <Link to='/productdetail'>
+            <ACard>
+                <NameCard>Limpieza Facial</NameCard>
+            </ACard>
+        </Link>
     );
 }
 
