@@ -3,11 +3,12 @@ import SecondarySlider from "../components/SecondarySlider"
 import ImageSecondarySlide from '../styles components/secondarySlider/ImageSecondarySlide';
 import flowerBlue from "../media/flower-blue.jpg"
 
-const Treatments = ({bgImg}) => {
+const Treatments = () =>
+{
     return (
         <ImageSecondarySlide bgImg={flowerBlue}>
             <h1>Treatments</h1>
-            <SecondarySlider/>
+            <SecondarySlider />
         </ImageSecondarySlide>
     );
 }
