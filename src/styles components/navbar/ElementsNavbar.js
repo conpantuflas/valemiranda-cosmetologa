@@ -6,13 +6,13 @@ const ElementsNavbar = styled.div`
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 99%;
   height: 1.5rem;
   margin: 0 auto;
   padding-bottom: 1rem;
   color: #ac415a;
   font-size: 1.5rem;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   position: relative;
   z-index: 1000;
   top: 0;
